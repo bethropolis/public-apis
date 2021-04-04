@@ -1,5 +1,5 @@
 {
-  "name": "vue",
+  "name": "public-apis",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -44,9 +44,9 @@
     "not ie <= 8"
   ],
   "keywords": [
+    "apis",
     "vue",
-    "vuejs",
-    "starter"
+    "public"
   ],
-  "description": "Vue.js example starter project"
+  "description": "this is a list of free vue apis"
 }
