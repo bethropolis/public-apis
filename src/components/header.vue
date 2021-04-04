@@ -1,10 +1,14 @@
 <template>
-  <div class="hello"></div>
-</template>
+  <div>
+    <h1 class="head">{{ msg }}</h1>
+    <a href="http://github.com/bethropolis/public-apis" class="github"><h4>Github</h4></a>
+    <hr /> 
+  </div>
+</template> 
 
 <script>
 export default {
-  name: "header",
+  name: "appheader",
   props: {
     msg: String,
   },
@@ -13,18 +17,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+.head {
+  font-size: 35px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-shadow: 2px 2px 3px #38CE1D;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+.github{
+  position:absolute;
+  top: 10px;
+  right: 20px; 
 }
 </style>

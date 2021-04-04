@@ -1,18 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" width="25%">
-    <HelloWorld msg="Hello Vue in CodeSandbox!"/>
+    <appHeader msg="Public apis" />
+    <appBody /> 
+    <h4>Built by <a href="http://twitter.com/bethropolis">Bethropolis</a></h4>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
-
+import appHeader from "./components/header";
+import appBody from "./components/api";
 export default {
   name: "App",
   components: {
-    HelloWorld
-  }
+    appHeader,
+    appBody,
+  },
 };
 </script>
 
@@ -23,6 +25,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+a{
+  color: #6EE7B7; 
 }
 </style>
