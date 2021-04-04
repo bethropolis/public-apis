@@ -11,7 +11,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="api in apis.entries">     
+        <tr v-for="api in apis.entries">      
           <a :href="api.Link"><td class="lalign">{{ api.API }}</td></a> 
           <td>{{ api.Auth || "no" }}</td> 
           <td>{{ api.HTTPS }}</td> 
