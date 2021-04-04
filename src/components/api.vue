@@ -11,14 +11,12 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="api in apis.entries">
-          <a :href="api.Link"
-            ><td class="lalign">{{ api.API }}</td></a
-          >
-          <td>{{ api.Auth || "no" }}</td>
-          <td>{{ api.HTTPS }}</td>
-          <td>{{ api.Category }}</td>
-          <td>{{ api.Description }}</td>
+        <tr v-for="api in apis.entries">     
+          <a :href="api.Link"><td class="lalign">{{ api.API }}</td></a> 
+          <td>{{ api.Auth || "no" }}</td> 
+          <td>{{ api.HTTPS }}</td> 
+          <td>{{ api.Category }}</td> 
+          <td>{{ api.Description }}</td> 
         </tr>
       </tbody>
     </table>
